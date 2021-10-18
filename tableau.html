@@ -2,6 +2,12 @@
 <html>
 
     <head>
+        <style>
+            td
+            {
+                text-align: center;
+            }
+        </style>
 <title>les tableaux</title>
     </head>
 <body>
@@ -23,16 +29,36 @@
 <td>7</td><td>8</td><td>9</td>
 </tr>
 </table>
-<h2>Un tableaux avec fusion de colonnes</h2>
+
+<br><br>
 <table width="50%" align="center" border="1">
 <!--tr signifie une ligne-->
 <tr>
     <!--td signifie colonne-->
-<td>1</td><td>2</td><td>3</td>
+<td colspan="3"><h2>Un tableaux avec fusion de colonnes</h2>
+</td>
 </tr>
 <tr>
     <!--td signifie colonne-->
 <td>4</td><td>5</td><td>6</td>
+</tr>
+<tr>
+    <!--td signifie colonne-->
+    <tfoot>
+<th>7</th><th>8</th><th>9</th></tfoot>
+</tr>
+</table>
+
+<h2>Un tableaux avec fusion des lignes</h2>
+<table width="50%" align="center" border="1">
+<!--tr signifie une ligne-->
+<tr>
+    <!--td signifie colonne-->
+<td rowspan="2">somme</td><td>2</td><td>3</td>
+</tr>
+<tr>
+    <!--td signifie colonne-->
+<td>5</td><td>6</td>
 </tr>
 <tr>
     <!--td signifie colonne-->
